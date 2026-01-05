@@ -19,7 +19,7 @@ https://github.com/ReVanced/GmsCore/releases/latest
 
 ### 1.4. What is the latest YouTube version supported? 
 
-19.43.41 as of 2025-12-29T20:10 UTC. You can check it in ReVanced manager
+19.43.41 as of 2026-01-05T20:11 UTC. You can check it in ReVanced manager
 
 ### 1.5. Is ReVanced related to Vanced?
 
