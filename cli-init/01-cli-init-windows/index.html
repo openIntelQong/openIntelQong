@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/revanced-troubleshooting-guide">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826428397658">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827034548263">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.1.0">
+    <meta name="generator" content="Retype 4.3.0">
 
     <!-- Primary Meta Tags -->
     <title>ReVanced CLI Initialize Guide (Windows)</title>
@@ -30,13 +30,21 @@
     <meta property="og:site_name" content="ReVanced troubleshooting">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/cli-init/01-cli-init-windows/">
+    <meta name="twitter:title" content="ReVanced CLI Initialize Guide (Windows)">
+    <meta name="twitter:description" content="In this guide, we are going to use ReVanced CLI on Windows to patch instead of manager.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/SodaWithoutSparkles/revanced-troubleshooting-guide/main/screenshots/502-jdk_install.png">
+    <meta name="twitter:image:alt" content="ReVanced CLI Initialize Guide (Windows)">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=4.1.0.826428397658" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.3.0.827034548263" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.1.0.826428397658" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.1.0.826428397658" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.3.0.827034548263" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.3.0.827034548263" data-turbo-eval="false" defer></script>
 
     <style>
         a.border-gray-300 {
@@ -70,7 +78,7 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-xl">
+                    <a id="retype-branding-logo" href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/" class="flex items-center leading-snug text-xl">
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">ReVanced troubleshooting</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Guide</span>
                 </div>
@@ -159,19 +167,9 @@
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <!-- Page content  -->
-<doc-anchor-target id="revanced-cli-initialize-guide-windows" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#revanced-cli-initialize-guide-windows">#</doc-anchor-trigger>
-        <span>ReVanced CLI Initialize Guide (Windows)</span>
-    </h1>
-</doc-anchor-target>
+<h1 id="revanced-cli-initialize-guide-windows">ReVanced CLI Initialize Guide (Windows)</h1>
 <p>In this guide, we are going to use ReVanced CLI on Windows to patch instead of manager.</p>
-<doc-anchor-target id="1-install-java-development-kit-jdk">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-install-java-development-kit-jdk">#</doc-anchor-trigger>
-        <span>1. Install Java Development Kit (JDK)</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="1-install-java-development-kit-jdk">1. Install Java Development Kit (JDK)</h2>
 <ol>
 <li>Visit the <a href="https://www.azul.com/downloads/?package=jdk#zulu">download page of Azul JDK</a></li>
 <li>JDK versions 11, <strong>17</strong> and 20 are all compatible. Download the <code translate="no" v-pre>.msi</code> installer for the platform you need</li>
@@ -198,7 +196,7 @@
 <doc-panel id="image-for-reference" collapsed>
     <template #title>Image for reference</template>
 <p><figure class="content-center">
-    <img src="https://raw.githubusercontent.com/SodaWithoutSparkles/revanced-troubleshooting-guide/main/screenshots/502-jdk_install.png" alt="Check all options" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="https://raw.githubusercontent.com/SodaWithoutSparkles/revanced-troubleshooting-guide/main/screenshots/502-jdk_install.png" alt="Check all options" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption">Check all options</figcaption>
 </figure>
 </p>
@@ -206,14 +204,9 @@
 <ol start="5">
 <li>Wait for it to finish installing</li>
 </ol>
-<doc-anchor-target id="2-get-revanced-related-files">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-get-revanced-related-files">#</doc-anchor-trigger>
-        <span>2. Get ReVanced related files</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="2-get-revanced-related-files">2. Get ReVanced related files</h2>
 <p><figure class="content-center">
-    <img src="https://raw.githubusercontent.com/SodaWithoutSparkles/revanced-troubleshooting-guide/main/screenshots/501-cli-patch-embed.jpg" alt="Overview" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="https://raw.githubusercontent.com/SodaWithoutSparkles/revanced-troubleshooting-guide/main/screenshots/501-cli-patch-embed.jpg" alt="Overview" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption">Overview</figcaption>
 </figure>
 </p>
@@ -227,12 +220,7 @@
 </li>
 <li>Put all of the files in a folder in <code translate="no" v-pre>Downloads</code>. Lets call it <code translate="no" v-pre>revanced</code> for now</li>
 </ol>
-<doc-anchor-target id="3-get-the-apk-you-wanted-to-patch">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-get-the-apk-you-wanted-to-patch">#</doc-anchor-trigger>
-        <span>3. Get the APK you wanted to patch</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="3-get-the-apk-you-wanted-to-patch">3. Get the APK you wanted to patch</h2>
 <ol>
 <li>If you want YouTube APK, get the YouTube apk link at <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step/03-get-files/">step by step guide</a></li>
 <li>If you want other APKs, find the supported version at <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/05-versions/">versions.md</a></li>
@@ -255,12 +243,7 @@
         </div>
     </div>
 </div>
-<doc-anchor-target id="4-sanity-checks">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-sanity-checks">#</doc-anchor-trigger>
-        <span>4. Sanity checks</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="4-sanity-checks">4. Sanity checks</h2>
 <ol>
 <li>Go to the <code translate="no" v-pre>revanced</code> folder you made just now</li>
 <li>Right-click/Shift-right-click the empty space and click &quot;Open Terminal&quot;/&quot;Open Powershell&quot;</li>
@@ -272,17 +255,12 @@
 <doc-panel id="image-for-reference" collapsed>
     <template #title>Image for reference</template>
 <p><figure class="content-center">
-    <img src="https://raw.githubusercontent.com/SodaWithoutSparkles/revanced-troubleshooting-guide/main/screenshots/500-open_pwsh.gif" alt="Open powershell button in ribbon" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="https://raw.githubusercontent.com/SodaWithoutSparkles/revanced-troubleshooting-guide/main/screenshots/500-open_pwsh.gif" alt="Open powershell button in ribbon" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption">Open powershell button in ribbon</figcaption>
 </figure>
 </p>
 </doc-panel>
-<doc-anchor-target id="5-continue">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#5-continue">#</doc-anchor-trigger>
-        <span>5. Continue</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="5-continue">5. Continue</h2>
 <p>This section has been completed. Go back to the <a href="../../06-revanced-cli/">main cli guide</a>.</p>
 
                 

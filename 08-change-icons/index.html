@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/revanced-troubleshooting-guide">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826428397658">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827034548263">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.1.0">
+    <meta name="generator" content="Retype 4.3.0">
 
     <!-- Primary Meta Tags -->
     <title>ReVanced CLI Custom Icon Guide</title>
@@ -30,13 +30,21 @@
     <meta property="og:site_name" content="ReVanced troubleshooting">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/08-change-icons/">
+    <meta name="twitter:title" content="ReVanced CLI Custom Icon Guide">
+    <meta name="twitter:description" content="Your icon should satisfy the following requirements:">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/SodaWithoutSparkles/revanced-troubleshooting-guide/main/screenshots/601-icon-kitchen.png">
+    <meta name="twitter:image:alt" content="ReVanced CLI Custom Icon Guide">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.1.0.826428397658" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.3.0.827034548263" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826428397658" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826428397658" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.3.0.827034548263" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.3.0.827034548263" data-turbo-eval="false" defer></script>
 
     <style>
         a.border-gray-300 {
@@ -70,7 +78,7 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="../" class="flex items-center leading-snug text-xl">
+                    <a id="retype-branding-logo" href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/" class="flex items-center leading-snug text-xl">
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">ReVanced troubleshooting</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Guide</span>
                 </div>
@@ -159,18 +167,8 @@
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <!-- Page content  -->
-<doc-anchor-target id="revanced-cli-custom-icon-guide" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#revanced-cli-custom-icon-guide">#</doc-anchor-trigger>
-        <span>ReVanced CLI Custom Icon Guide</span>
-    </h1>
-</doc-anchor-target>
-<doc-anchor-target id="prepare-the-icon">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#prepare-the-icon">#</doc-anchor-trigger>
-        <span>Prepare the icon</span>
-    </h2>
-</doc-anchor-target>
+<h1 id="revanced-cli-custom-icon-guide">ReVanced CLI Custom Icon Guide</h1>
+<h2 id="prepare-the-icon">Prepare the icon</h2>
 <p>Your icon should satisfy the following requirements:</p>
 <ul>
 <li>Size between 128x128 and 1024x1024 pixels</li>
@@ -179,12 +177,7 @@
 <li>Format is PNG</li>
 </ul>
 <p>If any of the above requirements are not met, use tools like <a href="https://photopea.com/">Photopea</a> (Runs in-browser), Gimp (Free, Open-Sourced), or Photoshop (Paid) to modify the image. How to use such tools are out of scope of the guide, google search the keywords for help. Example: &quot;Photopea remove background&quot;, &quot;Gimp export as png&quot;.</p>
-<doc-anchor-target id="generate-the-file-structure">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#generate-the-file-structure">#</doc-anchor-trigger>
-        <span>Generate the file structure</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="generate-the-file-structure">Generate the file structure</h2>
 <ol>
 <li>Go to <a href="https://icon.kitchen/">this site</a></li>
 <li>Select your Image tab under Icon (or use the generic Clipart)</li>
@@ -196,17 +189,12 @@
 <doc-panel id="image-for-reference" collapsed>
     <template #title>Image for reference</template>
 <p><figure class="content-center">
-    <img src="https://raw.githubusercontent.com/SodaWithoutSparkles/revanced-troubleshooting-guide/main/screenshots/601-icon-kitchen.png" alt="Icon kitchen" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="https://raw.githubusercontent.com/SodaWithoutSparkles/revanced-troubleshooting-guide/main/screenshots/601-icon-kitchen.png" alt="Icon kitchen" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption">Icon kitchen</figcaption>
 </figure>
 </p>
 </doc-panel>
-<doc-anchor-target id="rename-the-files-for-youtube-only">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rename-the-files-for-youtube-only">#</doc-anchor-trigger>
-        <span>Rename the files (For YouTube Only)</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="rename-the-files-for-youtube-only">Rename the files (For YouTube Only)</h2>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -243,12 +231,7 @@
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="rename-the-files-generally">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rename-the-files-generally">#</doc-anchor-trigger>
-        <span>Rename the files (Generally)</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="rename-the-files-generally">Rename the files (Generally)</h2>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -275,12 +258,7 @@
 <li>Files in the X folder should have the same names as files in the Y folder</li>
 <li>Files in Y but not in X can be ignored</li>
 </ol>
-<doc-anchor-target id="modify-the-options-file">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#modify-the-options-file">#</doc-anchor-trigger>
-        <span>Modify the Options file</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="modify-the-options-file">Modify the Options file</h2>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -303,19 +281,9 @@
 <li>Generate the options file if it doesn&#x27;t exist</li>
 <li>Edit the <code translate="no" v-pre>iconPath</code> key to include the path to the res folder</li>
 </ol>
-<doc-anchor-target id="patch">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#patch">#</doc-anchor-trigger>
-        <span>Patch</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="patch">Patch</h2>
 <p>Follow the standard procedure to patch with the options file</p>
-<doc-anchor-target id="credits">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#credits">#</doc-anchor-trigger>
-        <span>Credits</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="credits">Credits</h2>
 <p>This guide is modified from @leadedmegabyte&#x27;s change icons guide</p>
 
                 

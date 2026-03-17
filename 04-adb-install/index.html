@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/revanced-troubleshooting-guide">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826428397658">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827034548263">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.1.0">
+    <meta name="generator" content="Retype 4.3.0">
 
     <!-- Primary Meta Tags -->
     <title>ADB install guide</title>
@@ -26,13 +26,19 @@
     <meta property="og:site_name" content="ReVanced troubleshooting">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/04-adb-install/">
+    <meta name="twitter:title" content="ADB install guide">
+    <meta name="twitter:description" content="This guide is to use ADB (Android Debug Bridge) to install ReVanced (or any other apk). This has a higher chance of working, and provides more debug">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.1.0.826428397658" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.3.0.827034548263" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826428397658" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826428397658" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.3.0.827034548263" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.3.0.827034548263" data-turbo-eval="false" defer></script>
 
     <style>
         a.border-gray-300 {
@@ -66,7 +72,7 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="../" class="flex items-center leading-snug text-xl">
+                    <a id="retype-branding-logo" href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/" class="flex items-center leading-snug text-xl">
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">ReVanced troubleshooting</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Guide</span>
                 </div>
@@ -155,43 +161,18 @@
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <!-- Page content  -->
-<doc-anchor-target id="adb-install-guide" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#adb-install-guide">#</doc-anchor-trigger>
-        <span>ADB install guide</span>
-    </h1>
-</doc-anchor-target>
-<doc-anchor-target id="preface">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#preface">#</doc-anchor-trigger>
-        <span>Preface</span>
-    </h2>
-</doc-anchor-target>
+<h1 id="adb-install-guide">ADB install guide</h1>
+<h2 id="preface">Preface</h2>
 <p>This guide is to use ADB (Android Debug Bridge) to install ReVanced (or any other apk). This has a higher chance of working, and provides more debug information if it does not work.</p>
-<doc-anchor-target id="requirements">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements">#</doc-anchor-trigger>
-        <span>Requirements</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="requirements">Requirements</h2>
 <ol>
 <li>A windows computer</li>
 <li>An Android smartphone with USB debugging enabled</li>
 <li>An USB cable capable of data transfer</li>
 </ol>
 <p>If you don&#x27;t know how to enable USB debugging, google &quot;&lt;phone model&gt; enable usb debugging&quot; (obviously replacing &lt;phone model&gt; with your actual phone model)</p>
-<doc-anchor-target id="steps">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#steps">#</doc-anchor-trigger>
-        <span>Steps</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="adb-setup">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#adb-setup">#</doc-anchor-trigger>
-        <span><code translate="no" v-pre>adb setup</code></span>
-    </h3>
-</doc-anchor-target>
+<h2 id="steps">Steps</h2>
+<h3 id="adb-setup"><code translate="no" v-pre>adb setup</code></h3>
 <ol>
 <li><p>On the computer, download the latest <a href="https://developer.android.com/tools/releases/platform-tools">platform tools</a></p>
 </li>
@@ -226,12 +207,7 @@
 <li><p>Enter <code translate="no" v-pre>whoami</code>. It should output <code translate="no" v-pre>shell</code>. Note: you need to hit the &lt;Enter&gt; key.</p>
 </li>
 </ol>
-<doc-anchor-target id="install-via-adb">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#install-via-adb">#</doc-anchor-trigger>
-        <span>Install via ADB</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="install-via-adb">Install via ADB</h3>
 <ol>
 <li><p>Enter <code translate="no" v-pre>cd /storage/emulated/0/Download</code>.</p>
 </li>
@@ -283,23 +259,13 @@
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="pre-cleanup">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pre-cleanup">#</doc-anchor-trigger>
-        <span>Pre-cleanup</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="pre-cleanup">Pre-cleanup</h2>
 <ol>
 <li>This section is only needed of you have done step 18</li>
 <li>Enter <code translate="no" v-pre>rm /data/local/tmp/*.apk</code></li>
 <li>pre-cleanup done. Now go to cleanup section</li>
 </ol>
-<doc-anchor-target id="cleanup">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cleanup">#</doc-anchor-trigger>
-        <span>Cleanup</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="cleanup">Cleanup</h2>
 <ol>
 <li><p>Then you can disconnect the phone, disable USB debugging and disable developer options on your phone. Close the shell by typing <code translate="no" v-pre>exit</code> or the X button as usual.</p>
 </li>
