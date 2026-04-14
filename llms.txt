@@ -1,0 +1,107 @@
+﻿# Home
+
+> Troubleshooting guide for Revanced
+
+- [Home](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/index.md): Home
+- [Versions to use](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/05-versions.md): This is a list of versions to use with ReVanced patches:
+- [ReVanced CLI patch guide](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/06-revanced-cli.md): For Windows users, visit ReVanced CLI Initialize Guide (Windows).
+- [ReVanced CLI Custom Icon Guide](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/08-change-icons.md): Your icon should satisfy the following requirements:
+- [ReVanced Update guide](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/07-update-revanced.md): In this guide we will update the ReVanced installed with ReVanced manager
+- [ADB install guide](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/04-adb-install.md): This guide is to use ADB (Android Debug Bridge) to install ReVanced (or any other apk). This has a higher chance of working, and provides more debug information if it does not work.
+- [ADB remove guide](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/03-adb-remove.md): This guide is to use ADB (Android Debug Bridge) to remove remains or artifacts from the last ReVanced YouTube install
+- [Attributions](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/attributions.md): Special thanks to the following people:
+
+## Step by step
+
+- [ReVanced Setup Guide](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step/00-preface.md): This is a first-start guide for starters to patch a copy of YouTube ReVanced.
+- [1. Requirements](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step/01-requirements.md): You need to have the following to follow this guide:
+- [2. Checking versions](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step/02-check-ver.md): We are going to start patching now, but first we need to check the suggested version of YouTube.
+- [3. Getting the files ready](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step/03-get-files.md): In this section, you can find the latest supported Revanced Manager, GmsCore and YouTube APK.
+- [4. Select APK](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step/05-select-apk.md): In ReVanced manager, go to the Patcher tab and click "Select an application"
+- [5. Select patches](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step/06-select-patches.md): The manager now automatically select patches for first time users. Skip to the next section IF you are patching for the first time.
+- [6. Patching](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step/07-patching.md): Click patch on the bottom right
+- [7. Patching Done!](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step/08-post-patch.md): After patching is done, export the patched APK for backup.
+
+## Step by step general
+
+- [ReVanced Setup Guide](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step-general/00-preface.md): This is a patch and app agnostic guide for ReVanced. If you want to patch YouTube, use the YouTube Specific Guide instead.
+- [1. Requirements](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step-general/01-requirements.md): You need to have the following to follow this guide:
+- [2. Getting the files ready](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step-general/03-get-files.md): In this section, you can find the latest supported Revanced Manager, GmsCore and YouTube APK.
+- [3. Select APK](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step-general/05-select-apk.md): In ReVanced Manager, go to the Patcher tab and click "Select an application"
+- [4. Select patches](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step-general/06-select-patches.md): The manager now automatically select patches for first time users. Skip to the next section IF you are patching for the first time.
+- [5. Patching](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step-general/07-patching.md): Click patch on the bottom right
+- [6. Patching Done](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/step-by-step-general/08-post-patch.md): After patching is done, export the patched APK for backup.
+
+## Troubleshoot
+
+- [ReVanced Trouble​shooting Guide](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/00-trouble-shooting.md): Troubleshooting guide for Revanced
+- [1. General](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/01-general.md): General information
+
+### 2. ReVanced manager
+
+- [2. ReVanced manager](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager.md): Troubleshooting regarding ReVanced manager issues
+- [2.1. ReVanced manager does not install](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/01.md): Not enough storage space, check that you have ≥1GB to be on the safe side
+- [2.2. What is the latest supported / suggested Youtube apk version?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/02.md): In ReVanced manager > patcher > select application, it tells you the latest supported / suggested YouTube version to patch
+- [2.3. Where can I get the YouTube APK?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/03.md): https://www.apkmirror.com/apk/google-inc/youtube/
+- [2.4. How to export keystore](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/04.md): This is a new feature from version 0.1.0. Go to ReVanced manager > settings > scroll down to import & export > export keystore
+- [2.5. How to import keystore](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/05.md): This is a new feature from version 0.1.0. Go to ReVanced manager > settings > scroll down to import & export > import keystore
+- [2.6. Cannot update ReVanced manager](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/06.md): If you have manager version ≥0.1.0, follow the above steps on exporting the keystore. Then, install the new version and import the old keystore back in.
+- [2.7. Cannot select YouTube APK to patch](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/07.md): If you have manager version ≥0.1.0, follow the above steps on exporting the keystore. Then, install the new version and import the old keystore back in.
+- [2.8. ReVanced manager still shows update available when I am on latest?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/08.md): Deleted as outdated
+- [2.9. Non-root install not possible?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/09.md): Select GmsCore support patch in the patches selection menu.
+- [2.10. Cannot find/select patch <insert patch name here>?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/10.md): Your selected app version was incompatible. Use the Suggested version.
+- [2.11. What patch should I select?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/11.md): Select the default/recommended ones. When you are in the select patches window, you can click the "default" or "recommended" button on the top. You can review the defaults, but don't exclude patches that you don't know what it means.
+- [2.12. Cannot select patch?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/12.md): Click the "Selected Patches" box
+- [2.13. Import patches selection](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/13.md): Go to ReVanced manager > settings > scroll down to import & export > Import patches selection. Select the downloaded JSON file just now. You now have the same set of patches mine.
+- [2.14. ReVanced manager aborting / exit code 135 / exit code 139 / ARMv7 devices](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/14.md): If you see the text "exit code = 135" or "exit code = 139", then your devices architecture is not supported.
+- [2.15. ReVanced manager does not select APK](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/15.md): Symptoms: after clicking select an application > YouTube, nothing happened and it goes back to the patcher tab without selecting any apps
+- [2.16 ReVanced manager patch failed / patch not applied](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/16.md): Non-recommended / non-default patches used
+- [2.17 Patched apk does not install](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/17.md): Refer to section 3.3
+- [2.18 Regarding ReVanced Extended patches / InvocationTargetExceptions](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/02-manager/18.md): Using ReVanced Extended patches is the most likely cause for InvocationTargetException.
+
+### 3. ReVanced YouTube
+
+- [3. ReVanced YouTube](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube.md): Troubleshooting regarding YouTube ReVanced issues
+- [3.1. Unable to open/launch ReVanced YouTube / ReVanced crashing](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/01.md): Probably one of the following:
+- [3.2. Video playback issues / buffers / buggy / content not available](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/02.md): First reboot your phone to see if this issue resolves itself. If not...
+- [3.3. App not installed / Installation is blocked / install_failed_verification_failure](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/03.md): Probably one of the following reason
+- [3.4. Video turns very dark in fullscreen](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/04.md): Try swiping up on the left side of your screen. This feature is called swipe brightness control. Swipe down all the way and it would use auto-brightness. You can also swipe to control volume on the right.
+- [3.5. No internet connection](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/05.md): Did you change your google password? Anyway, go to system settings > accounts > Google (blue icon with lowercase g) > delete/logout account. Don't worry, this will not remove your google account on your device, just remove the one used by GmsCore (hence ReVanced).
+- [3.6. Shorts button missing?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/06.md): Disable: ReVanced YT settings > ReVanced > Layout > Navigation buttons > Hide Shorts button
+- [3.7. Video UI looks strange when watching playlist](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/07.md): Disable: ReVanced YT settings > ReVanced > Layout > Hide fullscreen panels
+- [3.8. Cast button missing](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/08.md): Disable: ReVanced YT settings > ReVanced > Layout > Hide cast button
+- [3.9. Caption button missing](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/09.md): Disable: ReVanced YT settings > ReVanced > Layout > Hide caption button
+- [3.10. End screen cards missing](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/10.md): Disable: ReVanced YT settings > ReVanced > Layout > Hide end screen cards
+- [3.11. Captions/subtitles in the wrong place](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/11.md): It was fixed in patches version 2.172.0. Repatch your YouTube ReVanced with latest default patches. Keep in mind that YouTubers can configure subtitle positions so it might be intended for the subtitles to be on the top.
+- [3.12. Ambient mode / "glow around video" missing](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/12.md): Turn the function off and on again. Seriously, this fixed it.
+- [3.13. Some buttons next to like/dislike missing](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/13.md): Disable: ReVanced YT settings > ReVanced > Layout > Hide action buttons > All toggles listed
+- [3.14. Remix/share/thanks/shop/clip buttons missing](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/14.md): Disable: ReVanced YT settings > ReVanced > Layout > Hide action buttons > Hide all other action buttons
+- [3.15. Youtube autoplays the next video](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/15.md): Disable: ReVanced YT settings > ReVanced > Layout > Hide autoplay button
+- [3.16. <insert name here> is missing](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/16.md): It is probably in ReVanced YT settings > ReVanced > Layout. Scroll a bit and see if you can find it.
+- [3.17. There are two copy buttons?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/17.md): One is for copy the video URL, another one does the same but adds a timestamp, so people can click on that link and jump to that exact second.
+- [3.18. org.schabi.newpipe is not installed / unable to download video](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/18.md): Install it at https://github.com/TeamNewPipe/NewPipe/releases/latest
+- [3.19. How can I download a video?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/19.md): Use the download button inside the video player
+- [3.20. Buttons overlapping](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/20.md): https://github.com/revanced/revanced-patches/issues/387
+- [3.21. Title overlapping with buttons](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/21.md): https://github.com/revanced/revanced-patches/issues/455
+- [3.22. Casting to TV have ads](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/22.md): Casting to TV is different. ReVanced YT does not handle the video stream, it basically tells the TV: go and play that video with this link. So you will need a ad-free YouTube TV client.
+- [3.23. SponsorBlock does not work](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/23.md): SponsorBlock is a community project. There might be no marked sponsors yet because
+- [3.24. Dislike button shows nothing](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/24.md): Possible reasons include:
+- [3.25. Dislike button said hidden](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/25.md): The YouTuber opted-out from the Return Youtube Dislike project
+- [3.26. How to auto-skip sponsor segments?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/26.md): ReVanced setting > SponsorBlock > scroll down > Change segment behabior > select category > skip automatically
+- [3.27 Screen goes dark/dim and unable to control/swipe](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/27.md): This is a side effect of removing a YT premium ad. Updating patches to version 2.172.0 AND including the hide get premium patch should fix it.
+- [3.28 Low contrast in player / does not lower brightness when controls are visible](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/28.md): Repatch without the hide player overlay patch. This requires a repatch, you cannot fix it in settings.
+- [3.29 SponsorBlock temporarily not available](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/29.md): API Timed out. SB server did not respond in time. Either it is down or it is super busy right now. You can check the status of SB server here.
+- [3.30 Player controls won't disappear](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/30.md): Go to YouTube settings > Accessibility and disable Accessibility player.
+- [3.31 Where is the hide-shorts-button patch?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/31.md): Merged with navigation buttons patch
+- [3.32 How can I auto-skip sponsors with SponsorBlock?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/32.md): Revanced Youtube > settings > SponsorBlock > scroll down > select category > skip automatically
+- [3.33 Cannot see comments/details when fullscreen](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/33.md): Disable: Avatar > settings > ReVanced settings > layout > Hide fullscreen panels
+- [3.34 Shorts still shows in feed](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/34.md): Enable: ReVanced Settings > Layout > scroll to bottom > Shorts Components > Hide Shorts in feed
+- [3.35. Why did the logo/name change?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/35.md): The YouTube ReVanced logo and the name is changed by the custom branding patch. Since patch version 2.188.0 this is a non-default patch.
+- [3.36 Why is the audio track selection missing?](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/36.md): Enable it at: revanced settings > layout > player flyout menu items > audio track
+- [3.37 Video not available](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/03-youtube/37.md): Re-patch ReVanced Youtube and use GmsCore instead of vanced microG at GmsCore support patch.
+- [4. Generic Android debug methods](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/troubleshoot/04-generic.md): Force stop
+
+## CLI init
+
+- [ReVanced CLI Initialize Guide (Linux)](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/cli-init/02-cli-init-linux.md): In this guide, we are going to use ReVanced CLI on Linux to patch instead of manager. This guide mainly centers around debian-based distros, but you can adapt them to fit arch-based ones.
+- [ReVanced CLI Initialize Guide (Windows)](https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/cli-init/01-cli-init-windows.md): In this guide, we are going to use ReVanced CLI on Windows to patch instead of manager.

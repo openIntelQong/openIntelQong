@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/revanced-troubleshooting-guide">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828857066557">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.829462753472">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.5.3">
 
     <!-- Primary Meta Tags -->
     <title>ADB install guide</title>
     <meta name="title" content="ADB install guide">
-    <meta name="description" content="This guide is to use ADB (Android Debug Bridge) to install ReVanced (or any other apk). This has a higher chance of working, and provides more debug">
+    <meta name="description" content="This guide is to use ADB (Android Debug Bridge) to install ReVanced (or any other apk). This has a higher chance of working, and provides more debug information if it does not work.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/04-adb-install/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/04-adb-install/">
     <meta property="og:title" content="ADB install guide">
-    <meta property="og:description" content="This guide is to use ADB (Android Debug Bridge) to install ReVanced (or any other apk). This has a higher chance of working, and provides more debug">
+    <meta property="og:description" content="This guide is to use ADB (Android Debug Bridge) to install ReVanced (or any other apk). This has a higher chance of working, and provides more debug information if it does not work.">
     <meta property="og:site_name" content="ReVanced troubleshooting">
     <meta property="og:locale" content="en_US">
 
@@ -30,15 +31,18 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/04-adb-install/">
     <meta name="twitter:title" content="ADB install guide">
-    <meta name="twitter:description" content="This guide is to use ADB (Android Debug Bridge) to install ReVanced (or any other apk). This has a higher chance of working, and provides more debug">
+    <meta name="twitter:description" content="This guide is to use ADB (Android Debug Bridge) to install ReVanced (or any other apk). This has a higher chance of working, and provides more debug information if it does not work.">
+
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/04-adb-install.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.4.0.828857066557" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.5.3.829462753472" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.4.0.828857066557" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.4.0.828857066557" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.5.3.829462753472" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.5.3.829462753472" data-turbo-eval="false" defer></script>
 
     <style>
         a.border-gray-300 {
@@ -157,9 +161,11 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="adb-install-guide">ADB install guide</h1>
 <h2 id="preface">Preface</h2>
@@ -174,17 +180,23 @@
 <h2 id="steps">Steps</h2>
 <h3 id="adb-setup"><code translate="no" v-pre>adb setup</code></h3>
 <ol>
-<li><p>On the computer, download the latest <a href="https://developer.android.com/tools/releases/platform-tools">platform tools</a></p>
+<li>
+<p>On the computer, download the latest <a href="https://developer.android.com/tools/releases/platform-tools">platform tools</a></p>
 </li>
-<li><p>Unzip it. There should be an &quot;adb.exe&quot; inside. Don&#x27;t double-click it to open though, it won&#x27;t work.</p>
+<li>
+<p>Unzip it. There should be an &quot;adb.exe&quot; inside. Don&#x27;t double-click it to open though, it won&#x27;t work.</p>
 </li>
-<li><p>Right-click on the empty area next to it, select something like &quot;open in powershell&quot; or &quot;open in windows terminal&quot; or &quot;open in cmd&quot;.</p>
+<li>
+<p>Right-click on the empty area next to it, select something like &quot;open in powershell&quot; or &quot;open in windows terminal&quot; or &quot;open in cmd&quot;.</p>
 </li>
-<li><p>A command window (shell) would pop up. In that window, type <code translate="no" v-pre>adb devices</code>. Press enter. You may need to prepend <code translate="no" v-pre>./</code> or <code translate="no" v-pre>.\</code> in front of it, like <code translate="no" v-pre>./adb devices</code>. Remember the one used, and prepend it before all <code translate="no" v-pre>adb</code> commands from now on. Something like &quot;List of devices attached&quot; should appear. Something containing &quot;daemon&quot; might also appear, but you can safely ignore them.</p>
+<li>
+<p>A command window (shell) would pop up. In that window, type <code translate="no" v-pre>adb devices</code>. Press enter. You may need to prepend <code translate="no" v-pre>./</code> or <code translate="no" v-pre>.\</code> in front of it, like <code translate="no" v-pre>./adb devices</code>. Remember the one used, and prepend it before all <code translate="no" v-pre>adb</code> commands from now on. Something like &quot;List of devices attached&quot; should appear. Something containing &quot;daemon&quot; might also appear, but you can safely ignore them.</p>
 </li>
-<li><p>Connect your phone which USB debugging enabled to your computer with a USB cable.</p>
+<li>
+<p>Connect your phone which USB debugging enabled to your computer with a USB cable.</p>
 </li>
-<li><p>Allow USB debugging from the popup on the phone</p>
+<li>
+<p>Allow USB debugging from the popup on the phone</p>
 <ul>
 <li>You may need to unlock the device.</li>
 <li>If you dont see the popup, it might be caused by:
@@ -196,55 +208,73 @@
 </li>
 </ul>
 </li>
-<li><p>Then, on the shell, enter <code translate="no" v-pre>adb devices</code> again. There should be a new entry.</p>
+<li>
+<p>Then, on the shell, enter <code translate="no" v-pre>adb devices</code> again. There should be a new entry.</p>
 </li>
-<li><p>Copy the apk to your phone&#x27;s Download folder</p>
+<li>
+<p>Copy the apk to your phone&#x27;s Download folder</p>
 </li>
-<li><p>On the shell, enter <code translate="no" v-pre>adb shell</code></p>
+<li>
+<p>On the shell, enter <code translate="no" v-pre>adb shell</code></p>
 </li>
-<li><p>You are now using the shell in your device</p>
+<li>
+<p>You are now using the shell in your device</p>
 </li>
-<li><p>Enter <code translate="no" v-pre>whoami</code>. It should output <code translate="no" v-pre>shell</code>. Note: you need to hit the &lt;Enter&gt; key.</p>
+<li>
+<p>Enter <code translate="no" v-pre>whoami</code>. It should output <code translate="no" v-pre>shell</code>. Note: you need to hit the &lt;Enter&gt; key.</p>
 </li>
 </ol>
 <h3 id="install-via-adb">Install via ADB</h3>
 <ol>
-<li><p>Enter <code translate="no" v-pre>cd /storage/emulated/0/Download</code>.</p>
+<li>
+<p>Enter <code translate="no" v-pre>cd /storage/emulated/0/Download</code>.</p>
 </li>
-<li><p>Enter <code translate="no" v-pre>ls *.apk</code>. This would list all apks in Download</p>
+<li>
+<p>Enter <code translate="no" v-pre>ls *.apk</code>. This would list all apks in Download</p>
 </li>
-<li><p>Find the name of the apk you want to install from the list</p>
+<li>
+<p>Find the name of the apk you want to install from the list</p>
 </li>
-<li><p>Enter <code translate="no" v-pre>pm install name_of_apk.apk</code>. Example: <code translate="no" v-pre>pm install youtube-revanced_v19.43.41.apk</code></p>
+<li>
+<p>Enter <code translate="no" v-pre>pm install name_of_apk.apk</code>. Example: <code translate="no" v-pre>pm install youtube-revanced_v19.43.41.apk</code></p>
 </li>
-<li><p>If it said Success or showed nothing, check your phone to see if it actually insalled</p>
+<li>
+<p>If it said Success or showed nothing, check your phone to see if it actually insalled</p>
 <ul>
 <li>If yes, you have installed ReVanced. Go to Cleanup section</li>
 <li>If no, ask for help</li>
 </ul>
 </li>
-<li><p>If it said something like <code translate="no" v-pre>Error: Unable to open file</code></p>
+<li>
+<p>If it said something like <code translate="no" v-pre>Error: Unable to open file</code></p>
 <ul>
 <li>It should&#x27;ve shown you a suggestion, Example: Consider using a file under <code translate="no" v-pre>/data/local/tmp</code></li>
 <li>Remember that path, we are going to use that later</li>
 </ul>
 </li>
-<li><p>We are going to copy the APK to that path</p>
+<li>
+<p>We are going to copy the APK to that path</p>
 </li>
-<li><p>Enter <code translate="no" v-pre>cp name_of_apk.apk /data/local/tmp/</code>, obviously replacing <code translate="no" v-pre>name_of_apk.apk</code> with the actual name</p>
+<li>
+<p>Enter <code translate="no" v-pre>cp name_of_apk.apk /data/local/tmp/</code>, obviously replacing <code translate="no" v-pre>name_of_apk.apk</code> with the actual name</p>
 </li>
-<li><p>Now hit the arrow_up key on your keyboard (↑) until you see the command you entered in step 4 (<code translate="no" v-pre>pm install ...</code>. Don&#x27;t hit enter yet.</p>
+<li>
+<p>Now hit the arrow_up key on your keyboard (↑) until you see the command you entered in step 4 (<code translate="no" v-pre>pm install ...</code>. Don&#x27;t hit enter yet.</p>
 </li>
-<li><p>Use arrow keys (← →) to move the cursor.</p>
+<li>
+<p>Use arrow keys (← →) to move the cursor.</p>
 </li>
-<li><p>Add <code translate="no" v-pre>/data/local/tmp/</code> before the APK name such that it looked like this:</p>
+<li>
+<p>Add <code translate="no" v-pre>/data/local/tmp/</code> before the APK name such that it looked like this:</p>
 <ul>
 <li><code translate="no" v-pre>pm install /data/local/tmp/youtube-revanced_v19.43.41.apk</code></li>
 </ul>
 </li>
-<li><p>Hit enter</p>
+<li>
+<p>Hit enter</p>
 </li>
-<li><p>If it showed an error (&quot;Exception occurred while executing&quot;):</p>
+<li>
+<p>If it showed an error (&quot;Exception occurred while executing&quot;):</p>
 <ul>
 <li>Check the reason given</li>
 <li>&quot;not enough space&quot; then remove some things until you got the space</li>
@@ -252,7 +282,8 @@
 <li>Or alternatively, ask for help</li>
 </ul>
 </li>
-<li><p>If it said Success or showed nothing, check your phone to see if it actually insalled</p>
+<li>
+<p>If it said Success or showed nothing, check your phone to see if it actually insalled</p>
 <ul>
 <li>If yes, you have installed ReVanced. Go to pre-cleanup section</li>
 <li>If no, ask for help</li>
@@ -267,9 +298,11 @@
 </ol>
 <h2 id="cleanup">Cleanup</h2>
 <ol>
-<li><p>Then you can disconnect the phone, disable USB debugging and disable developer options on your phone. Close the shell by typing <code translate="no" v-pre>exit</code> or the X button as usual.</p>
+<li>
+<p>Then you can disconnect the phone, disable USB debugging and disable developer options on your phone. Close the shell by typing <code translate="no" v-pre>exit</code> or the X button as usual.</p>
 </li>
-<li><p>Delete the zip file and the extracted files download at the first step.</p>
+<li>
+<p>Delete the zip file and the extracted files download at the first step.</p>
 </li>
 </ol>
 
@@ -338,6 +371,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "ADB install guide", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "ADB install guide", level: 1, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/04-adb-install.md" }</script>
 </body>
 </html>

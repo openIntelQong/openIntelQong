@@ -1,0 +1,20 @@
+# ReVanced Trouble​shooting Guide
+
+Troubleshooting guide for Revanced
+
+This is a guide on solving common issues when using ReVanced YT and ReVanced manager. If you find something missing, [open a new issue](https://github.com/SodaWithoutSparkles/revanced-troubleshooting-guide/issues/new) and I would add it.
+
+- [Step-by-step first start guide (recommended)](step-by-step/00-preface.md)
+- [Single-page first start guide](00-first-start.md)
+- [Trouble​shooting guide](/troubleshoot/00-trouble-shooting.md)
+
+- [`adb` install guide](04-adb-install.md)
+- [`adb` remove guide](03-adb-remove.md)
+- [revanced-cli guide](06-revanced-cli.md)
+
+## Other resources
+
+- [Get notified for ReVanced Updates](https://discord.com/invite/cHHX7PSPux)
+- [Dummies guide on reddit](https://www.reddit.com/r/revancedapp/comments/xlcny9/revanced_manager_guide_for_dummies/)
+- [Taku's auto CLI to patch on computer](https://github.com/taku-nm/auto-cli)
+- [Reddit Client ID guide by KobeW50](https://github.com/KobeW50/ReVanced-Documentation/blob/main/Reddit-Client-ID-Guide.md#info)
